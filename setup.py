@@ -38,9 +38,7 @@ except ImportError:
 import sys
 
 # Replace with your libgit2 configuration.
-include_dirs = ['/usr/local/include']
-library_dirs = ['/usr/local/lib']
-libraries = ['git2', 'z', 'crypto']
+include_dirs, library_dirs, libraries = ['/usr/local/include'], ['/usr/local/lib'], ['git2', 'z', 'crypto']
 
 
 class TestCommand(Command):
